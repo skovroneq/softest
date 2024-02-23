@@ -25,7 +25,7 @@ class UserInterface(ABC):
         raise NotImplementedError
 
 
-class Ui:
+class Ui(UserInterface):
     def __init__(self):
         self.cmd_seq = None
         self.inp = None
