@@ -1,8 +1,28 @@
+from abc import ABC, abstractmethod
 from softest.ui3.contact.contact import Contact
 from softest.ui3.contact.contact_list import ContactList
 from softest.ui3.note.note import Note
 from softest.ui3.note.notes import Notes
 from softest.ui3.mdb import Mdb
+
+
+class UserInterface(ABC):
+
+    @abstractmethod
+    def perform_disp(self):
+        raise NotImplementedError
+
+    @abstractmethod
+    def perform_add(self):
+        raise NotImplementedError
+
+    @abstractmethod
+    def perform_edit(self):
+        raise NotImplementedError
+
+    @abstractmethod
+    def perform_delete(self):
+        raise NotImplementedError
 
 
 class Ui:
