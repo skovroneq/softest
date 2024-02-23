@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "softest"
+version = "0.1.0"
+description = ""
+authors = ["Krzysztof <skokrzy@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pymongo = ">=4.5.0,<4.6.0"
+levenshtein = ">=0.23.0,<0.24.0"
+pytest = ">=7.4.2,<7.5.0"
+setuptools = ">=65.5.1,<65.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

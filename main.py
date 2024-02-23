@@ -1,6 +1,6 @@
 from pymongo.errors import ServerSelectionTimeoutError
 
-from ui3.ui3 import Ui
+from softest.ui3.ui3 import Ui
 
 
 def main():
@@ -14,5 +14,5 @@ def main():
     ui.run()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
